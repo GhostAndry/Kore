@@ -1,0 +1,205 @@
+messages:
+  prefix: "&b&lKore&f:"
+  noPermission: "%prefix% &cYou don't have permission to do that."
+  invalid-player-target: "%prefix% &cPlease provide a valid player"
+
+  general-help: |-
+    &aKore by GhostAndry
+    &7 &c<mandatory> &8&o[optional]
+    &7 /kore reload
+    &7 /tp <player> &8&o[player]
+    &7 /gamemode <player> &8&o[player]
+    &7 /gmc &8&o[player]
+    &7 /gms &8&o[player]
+    &7 /gma &8&o[player]
+    &7 /gmsp &8&o[player]
+    &7 /fly &8&o[player]
+    &7 /speed <speed> &8&o[player]
+    &7 /heal &8&o[player]
+    &7 /explode <player> <power> <fire true/false>
+    &7 /kill <player>
+    &7 /smite <player>
+    &7 /kore setfreezeloc
+    &7 /freeze <player>
+    &7 /unfreeze <player>
+    &7 /warp <name>
+    &7 /warps <add|remove> <name>
+    &7 /home <set|remove>
+
+fly:
+  enabled: true
+
+  help: "%prefix% &cUsage: /fly &8&o[player]"
+  toggled-on: "%prefix% &aFly enabled"
+  toggled-off: "%prefix% &cFly disabled"
+  on-other: "%prefix% &aEnabled fly for &e&o%player%"
+  off-other: "%prefix% &cDisabled fly for &e&o%player%"
+
+teleport:
+  enabled: true
+
+  help: "%prefix% &cUsage: /tp <player> &8&o[player]"
+  teleported-other: "%prefix% &aYou have teleported %player% to %target%"
+  teleported-player: "%prefix% &aYou have been teleported to %player%"
+
+heal:
+  enabled: true
+
+  help: "%prefix% &cUsage: /heal &8&o[player]"
+  healed: "%prefix% &aYou have been healed!"
+  healed-other: "%prefix% &aYou have been healed &e&o%player%"
+
+gamemode:
+  enabled: true
+
+  help: "%prefix% &cUsage: /gamemode <gamemode> &8&o[player]"
+  invalid-gamemode: "%prefix% &cPlease provide a valid gamemode"
+  changed-other: "%prefix% &aYou have changed &e&o%player%'s&a gamemode to %gamemode%"
+  creative-changed: "%prefix% &aYour gamemode has been changed to &e&oCREATIVE"
+  survival-changed: "%prefix% &aYour gamemode has been changed to &e&oSURVIVAL"
+  adventure-changed: "%prefix% &aYour gamemode has been changed to &e&oADVENTURE"
+  spectator-changed: "%prefix% &aYour gamemode has been changed to &e&oSPECTATOR"
+
+vanish:
+  enabled: true
+
+  help: "%prefix% &cUsage: /vanish <player> &8&o[player]"
+  toggled-on: "%prefix% &aVanish toggled on."
+  toggled-off: "%prefix% &cVanish toggled off."
+  toggled-on-other: "%prefix% &aVanish toggled on for %player%."
+  toggled-off-other: "%prefix% &cVanish toggled off for %player%."
+
+  join-message: "&e%player% joined the game"
+  leave-message: "&e%player% left the game"
+
+explode:
+  enabled: true
+
+  max-power: 100 # OVER 500 SERVER WILL CRASH
+
+  help: "%prefix% &cUsage: /explode <player> <power> <fire>"
+  exploded-player: "%prefix% &aYou have created an explosion at the %player%'s position."
+  power-limit: "%prefix% &cYou have reached the max power limit &7(%max-power%)"
+
+god:
+  enabled: true
+
+  help: "%prefix% &CUsage: /god &8&o[player]"
+  toggled-on: "%prefix% &aGod enabled"
+  toggled-off: "%prefix% &cGod disabled"
+  enabled-other: "%prefix% &aYou have enabled god mode for &e&o%player%"
+  disabled-other: "%prefix% &cYou have disabled god mode for &e&o%player%"
+
+smite:
+  enabled: true
+
+  help: "%prefix% &cUsage: /smite <player>"
+  smite-player: "%prefix% &aSmited %player%"
+
+kill:
+  enabled: true
+
+  help: "%prefix% &cUsage: /kill <player>"
+  killed: "%prefix% &cYou killed &e&o%player%"
+
+speed:
+  enabled: true
+
+  help: "%prefix% &cUsage: /speed <speed> &8&o[player]"
+  invalid-value: "%prefix% &cInvalid speed value. speed values 0-5"
+  set: "%prefix% &aSpeed was set to &e&o%speed%"
+  set-other: "%prefix% &a%player%'s speed wa set to &e&o%speed%"
+
+warp:
+  enabled: true
+
+  help: |-
+    %prefix% &cUsage: 
+    &7  &c/warp <name>
+    &7  &c/warp list
+  warped: "%prefix% &aTeleporting you to &e&o%name%"
+  invalid: "%prefix% &cNo warp was found with name &e&o%name%"
+
+  warps:
+    help: |-
+      %prefix% &cUsage: 
+      &7  &c/warps add/create <name>
+      &7  &c/warps remove/delete <name>
+    added: "%prefix% &aA new warp named &e&o%name% &awas successfully added!"
+    removed: "%prefix% &cWarp named &e&o%name% &cwas successfully removed!"
+    invalid: "%prefix% &cNo warp was found with name &e&o%name%"
+    already-exist: "%prefix% &cThis warp already exist."
+
+home:
+  enabled: true
+
+  help: |-
+    %prefix% &CUsage:
+    &7  &c/home set
+    &7  &c/home remove
+  added: "%prefix% &aYour home was set here!"
+  removed: "%prefix% &cYour home was successfully removed!"
+  add-fail: "%prefix% &cYou already have set your home."
+  remove-fail: "%prefix% &cYou don't have any home set."
+  teleport: "%prefix% &aYou have been teleported to your home"
+
+spawn:
+  enabled: true
+  on-join: true
+
+  help: "%prefix% &cUsage: /spawn &8&o[player]"
+  teleport: "%prefix% &aYou have been teleported to spawn."
+  teleport-other: "%prefix% &aYou have teleported %player% to spawn"
+  not-set: "%prefix% &cYou cant teleport to spawn because the spawn was not set"
+
+  setspawn: "%prefix% &aSpawn was successfully set!"
+
+trash:
+  enabled: true
+
+freeze:
+  enable: true
+
+  noPerms-player: "%prefix% &cYou don't have permission to freeze %player%"
+
+  freezeLoc-not-set: "%prefix% &cFrozen location was not set use /kore setFreezeLoc to set a location."
+  freezeLoc-set: "%prefix% &aFrozen location was successfully set!"
+
+  platform: "TeamSpeak"
+  platform-ip: "mc.servername.com"
+
+
+  freeze:
+    usage: "%prefix% &cUsage: /freeze <player>"
+    already-frozen: "%prefix% &c%player% is already frozen"
+    player-frozen: "%prefix% &aYou have frozen %player%"
+    no-self: "%prefix% &cYou can't freeze yourself :P"
+
+    # -Dfile.encoding=UTF8 PUT THIS ON START FILE
+    frozen-message: |-
+      &7
+      &7█████████
+      &7████&c█&7████                      &4&lWARNING!
+      &7███&c█&0█&c█&7███
+      &7██&c█&6█&0█&6█&c█&7██
+      &7██&c█&6█&0█&6█&c█&7██       &cYou have been frozen. Don't log out!
+      &7█&c█&6██&0█&6██&c█&7█       &cor you will be &4&lBANNED!
+      &7█&c█&6█████&c█&7█      &cJoin in our %platform%
+      &c█&6███&0█&6███&c█      &7(%platform-ip%)
+      &c█████████
+      &7█████████
+      &7
+
+
+  unfreeze:
+    usage: "%prefix% &cUsage: /unfreeze <player>"
+    already-unfrozen: "%prefix% &c%player% is not frozen"
+    player-unfrozen: "%prefix% &aYou have unfrozen %player%"
+    no-self: "%prefix% &cYou can't unfreeze yourself :P"
+
+staff:
+  enabled: true
+
+  staffmode-enabled: "%prefix% &aStaffMode enabled"
+  staffmode-disabled: "%prefix% &cStaffMode disabled"
+

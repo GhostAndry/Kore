@@ -1,0 +1,108 @@
+name: Kore
+version: '${project.version}'
+main: me.ghostdevelopment.kore.Kore
+api-version: 1.19
+load: STARTUP
+authors: [ GhostAndry ]
+softdepend:
+  - PlaceholderAPI
+description: Core plugin for all you need
+
+commands:
+  kore:
+    description: ""
+  teleport:
+    aliases: tp
+    description: ""
+  gamemode:
+    aliases: gm
+    description: ""
+  gms:
+    description: ""
+  gmc:
+    description: ""
+  gmsp:
+    description: ""
+  gma:
+    description: ""
+  freeze:
+    description: ""
+  unfreeze:
+    description: ""
+  fly:
+    description: ""
+  explode:
+    description: ""
+  heal:
+    description: ""
+  smite:
+    aliases: [lightning,elightning,shock,eshock,esmite,strike,estrike,thor,ethor]
+    description: ""
+  god:
+    description: ""
+  kill:
+    description: ""
+  speed:
+    description: ""
+  warps:
+    description: ""
+  warp:
+    description: ""
+  home:
+    description: ""
+  spawn:
+    description: ""
+  setspawn:
+    description: ""
+  trash:
+    description: ""
+  staff:
+    description: ""
+  vanish:
+    description: ""
+    aliases:
+      - v
+
+permissions:
+  kore.help:
+    description: ""
+  kore.teleport:
+    description: ""
+  kore.tp:
+    description: ""
+  kore.gamemode:
+    description: ""
+  kore.fly:
+    description: ""
+  kore.speed:
+    description: ""
+  kore.god:
+    description: ""
+  kore.heal:
+    description: ""
+  kore.kill:
+    description: ""
+  kore.setspawn:
+    description: ""
+  kore.spawn:
+    description: ""
+  kore.vanish:
+    description: ""
+  kore.staff:
+    description: ""
+  kore.cannon:
+    description: ""
+  kore.explode:
+    description: ""
+  kore.smite:
+    description: ""
+  kore.home:
+    description: ""
+  kore.warp:
+    description: ""
+  kore.warps:
+    description: ""
+  kore.trash:
+    description: ""
+  kore.staffmode:
+    description: ""
