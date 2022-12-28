@@ -63,6 +63,10 @@ public class CommandVanish implements CommandExecutor {
                 vanished.remove(player);
             }
 
+        }else{
+            player.sendMessage(Utils.Color(plugin.getConfig().getString("vanish.help")
+                    .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
+            ));
         }
 
         return true;

@@ -25,6 +25,10 @@ messages:
     &7 /warp <name>
     &7 /warps <add|remove> <name>
     &7 /home <set|remove>
+    &7 /spawn
+    &7 /setspawn
+    &7 /trash
+    &7 /vanish
 
 fly:
   enabled: true
