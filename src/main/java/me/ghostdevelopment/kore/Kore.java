@@ -4,7 +4,6 @@ import me.ghostdevelopment.kore.Files.FreezeLocFile;
 import me.ghostdevelopment.kore.Files.HomesFile;
 import me.ghostdevelopment.kore.Files.SpawnFile;
 import me.ghostdevelopment.kore.Files.WarpsFile;
-import me.ghostdevelopment.kore.PlaceholderAPI.RegisterPlaceholder;
 import me.ghostdevelopment.kore.commands.player.CommandSpawn;
 import me.ghostdevelopment.kore.commands.player.CommandTrash;
 import me.ghostdevelopment.kore.events.GodMode;
@@ -41,7 +40,6 @@ public final class Kore extends JavaPlugin {
 
         registerCommands();
         registerListeners();
-        registerPlaceholders();
 
         SpawnFile.setUp();
         SpawnFile.get().options().copyDefaults(true);
@@ -121,10 +119,6 @@ public final class Kore extends JavaPlugin {
         // Vanish
         getServer().getPluginManager().registerEvents(new VanishOnJoin(this), this);
 
-    }
-
-    public void registerPlaceholders(){
-        new RegisterPlaceholder().register();
     }
 
     public static Kore getInstance() {

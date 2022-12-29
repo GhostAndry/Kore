@@ -4,8 +4,6 @@ main: me.ghostdevelopment.kore.Kore
 api-version: 1.19
 load: STARTUP
 authors: [ GhostAndry ]
-softdepend:
-  - PlaceholderAPI
 description: Core plugin for all you need
 
 commands:
