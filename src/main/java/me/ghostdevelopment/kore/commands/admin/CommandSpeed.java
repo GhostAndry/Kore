@@ -71,33 +71,6 @@ public class CommandSpeed implements CommandExecutor {
                         .replaceAll("%speed%", speed.toString())
                 ));
             }
-        } else if (args.length==2) {
-            String type = args[1];
-            Float speed = null;
-
-            try {
-                speed = Float.parseFloat(args[0]);
-            } catch (NumberFormatException e) {
-                player.sendMessage(Utils.Color(this.plugin.getConfig().getString("speed.invalid-value")
-                        .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
-                ));
-                return false;
-            }
-            if(speed>5.0||speed<0.0){
-                player.sendMessage(Utils.Color(plugin.getConfig().getString("speed.invalid-value")
-                        .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
-                ));
-                return false;
-            }
-            if(!(type.equals("fly")||type.equals("flight")||type.equals("walk"))){
-                player.sendMessage(Utils.Color(plugin.getConfig().getString("speed.help")
-                        .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
-                ));
-                return false;
-            }
-
-            Functions.setSpeed(player, type, speed);
-
         } else {
             player.sendMessage(Utils.Color(plugin.getConfig().getString("speed.help")
                     .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))

@@ -110,7 +110,7 @@ kill:
 speed:
   enabled: true
 
-  help: "%prefix% &cUsage: /speed <speed> &8&o[walk/speed]"
+  help: "%prefix% &cUsage: /speed <speed>"
   invalid-value: "%prefix% &cInvalid speed value. speed values 0-5"
   set: "%prefix% &aSpeed was set to &e&o%speed%"
   set-other: "%prefix% &a%player%'s speed wa set to &e&o%speed%"
