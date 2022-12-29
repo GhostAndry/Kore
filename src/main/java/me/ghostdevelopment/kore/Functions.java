@@ -29,7 +29,7 @@ public class Functions {
         for (PotionEffect effect : player.getActivePotionEffects())
             player.removePotionEffect(effect.getType());
     }
-    public static void setSpeed(Player player, String type,Float speed){
+    public static void setSpeed(Player player, String type, Float speed){
 
         if(type=="walk"){
             player.setWalkSpeed(speed / 5.0f);

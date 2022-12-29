@@ -35,20 +35,11 @@ public class CommandStaff implements CommandExecutor {
 
         if(!(StaffFiles.get().contains(player.getName()))){
             StaffFunctions.setStaffMode(player, true);
-            player.sendMessage(Utils.Color(plugin.getConfig().getString("staff.staffmode-enabled")
-                    .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
-            ));
         }else {
             if (StaffFiles.get().getBoolean(player.getName())) {
                 StaffFunctions.setStaffMode(player, false);
-                player.sendMessage(Utils.Color(plugin.getConfig().getString("staff.staffmode-disabled")
-                        .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
-                ));
             } else {
                 StaffFunctions.setStaffMode(player, true);
-                player.sendMessage(Utils.Color(plugin.getConfig().getString("staff.staffmode-enabled")
-                        .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
-                ));
             }
         }
 

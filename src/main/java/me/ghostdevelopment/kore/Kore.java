@@ -22,7 +22,6 @@ import me.ghostdevelopment.kore.freeze.commands.CommandUnfreeze;
 import me.ghostdevelopment.kore.freeze.listeners.FreezeListeners;
 import me.ghostdevelopment.kore.staffmode.StaffFiles;
 import me.ghostdevelopment.kore.staffmode.commands.CommandStaff;
-import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Kore extends JavaPlugin {
@@ -84,7 +83,7 @@ public final class Kore extends JavaPlugin {
         getCommand("setspawn").setExecutor(new CommandSetspawn(this));
         getCommand("spawn").setExecutor(new CommandSpawn(this));
 
-        getCommand("staff").setExecutor(new CommandStaff(this));
+        //getCommand("staff").setExecutor(new CommandStaff(this));
         getCommand("vanish").setExecutor(new CommandVanish(this));
 
         getCommand("teleport").setExecutor(new CommandTeleport(this));

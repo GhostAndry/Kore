@@ -9,6 +9,7 @@
 out/
 target/
 ignore/
+src/main/java/me/ghostdevelopment/kore/staffmode
 
 # Compiled class file
 *.class

@@ -43,7 +43,7 @@ public class CommandVanish implements CommandExecutor {
                 for(Player people : Bukkit.getOnlinePlayers()) {
                     if(!(people.hasPermission("kore.vanish")||people.hasPermission("kore.*")||people.hasPermission("*"))) {
                         people.hidePlayer(player);
-                        people.sendMessage(Utils.Color(plugin.getConfig().getString("vanish.leave-message")
+                        people.sendMessage(Utils.Color(plugin.getConfig().getString("messages.leave-message")
                                 .replaceAll("%player%", player.getName())
                         ));
                     }
@@ -54,7 +54,7 @@ public class CommandVanish implements CommandExecutor {
                 for(Player people : Bukkit.getOnlinePlayers()) {
                     if(!(people.hasPermission("kore.vanish")||people.hasPermission("kore.*")||people.hasPermission("*"))) {
                         people.showPlayer(player);
-                        people.sendMessage(Utils.Color(plugin.getConfig().getString("vanish.join-message"))
+                        people.sendMessage(Utils.Color(plugin.getConfig().getString("messages.join-message"))
                                 .replaceAll("%player%", player.getName())
                         );
                     }

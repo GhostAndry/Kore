@@ -3,6 +3,10 @@ messages:
   noPermission: "%prefix% &cYou don't have permission to do that."
   invalid-player-target: "%prefix% &cPlease provide a valid player"
 
+  # Need for staffmode and vanish
+  join-message: "&e%player% joined the game"
+  leave-message: "&e%player% left the game"
+
   general-help: |-
     &aKore by GhostAndry
     &7 &c<mandatory> &8&o[optional]
@@ -73,9 +77,6 @@ vanish:
   toggled-on-other: "%prefix% &aVanish toggled on for %player%."
   toggled-off-other: "%prefix% &cVanish toggled off for %player%."
 
-  join-message: "&e%player% joined the game"
-  leave-message: "&e%player% left the game"
-
 explode:
   enabled: true
 
@@ -109,7 +110,7 @@ kill:
 speed:
   enabled: true
 
-  help: "%prefix% &cUsage: /speed <speed> &8&o[player]"
+  help: "%prefix% &cUsage: /speed <speed> &8&o[walk/speed]"
   invalid-value: "%prefix% &cInvalid speed value. speed values 0-5"
   set: "%prefix% &aSpeed was set to &e&o%speed%"
   set-other: "%prefix% &a%player%'s speed wa set to &e&o%speed%"
@@ -161,6 +162,11 @@ spawn:
 trash:
   enabled: true
 
+cannon:
+  enabled: true
+
+  help: "%prefix% &cUsage: /cannon <entity> "
+
 freeze:
   enable: true
 
@@ -201,9 +207,11 @@ freeze:
     player-unfrozen: "%prefix% &aYou have unfrozen %player%"
     no-self: "%prefix% &cYou can't unfreeze yourself :P"
 
-staff:
-  enabled: true
+# In maintenance
+#staff:
+#  enabled: true
+#
+#  staffmode-enabled: "%prefix% &aStaffMode enabled"
+#  staffmode-disabled: "%prefix% &cStaffMode disabled"
 
-  staffmode-enabled: "%prefix% &aStaffMode enabled"
-  staffmode-disabled: "%prefix% &cStaffMode disabled"
 

@@ -54,8 +54,8 @@ commands:
     description: ""
   trash:
     description: ""
-  staff:
-    description: ""
+  #staff:
+  #  description: ""
   vanish:
     description: ""
     aliases:
@@ -102,5 +102,5 @@ permissions:
     description: ""
   kore.trash:
     description: ""
-  kore.staffmode:
-    description: ""
+  #kore.staffmode:
+  #  description: ""

@@ -72,7 +72,7 @@ public class CommandSpeed implements CommandExecutor {
                 ));
             }
         } else if (args.length==2) {
-            Player target = Bukkit.getPlayer(args[1]);
+            String type = args[1];
             Float speed = null;
 
             try {
@@ -89,30 +89,19 @@ public class CommandSpeed implements CommandExecutor {
                 ));
                 return false;
             }
-
-            if(player.isOnGround()){
-                Functions.setSpeed(player, "walk", speed);
-                target.sendMessage(Utils.Color(plugin.getConfig().getString("speed.set")
+            if(!(type.equals("fly")||type.equals("flight")||type.equals("walk"))){
+                player.sendMessage(Utils.Color(plugin.getConfig().getString("speed.help")
                         .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
-                        .replaceAll("%speed%", speed.toString())
                 ));
-                player.sendMessage(Utils.Color(plugin.getConfig().getString("speed.set-other")
-                        .replaceAll("%player%", target.getName())
-                        .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
-                        .replaceAll("%speed%", speed.toString())
-                ));
-            }else{
-                Functions.setSpeed(player, "fly", speed);
-                target.sendMessage(Utils.Color(plugin.getConfig().getString("speed.set")
-                        .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
-                        .replaceAll("%speed%", speed.toString())
-                ));
-                player.sendMessage(Utils.Color(plugin.getConfig().getString("speed.set-other")
-                        .replaceAll("%player%", target.getName())
-                        .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
-                        .replaceAll("%speed%", speed.toString())
-                ));
+                return false;
             }
+
+            Functions.setSpeed(player, type, speed);
+
+        } else {
+            player.sendMessage(Utils.Color(plugin.getConfig().getString("speed.help")
+                    .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
+            ));
         }
 
 
