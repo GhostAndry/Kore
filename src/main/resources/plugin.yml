@@ -2,9 +2,10 @@ name: Kore
 version: '${project.version}'
 main: me.ghostdevelopment.kore.Kore
 api-version: 1.19
-load: STARTUP
 authors: [ GhostAndry ]
 description: Core plugin for all you need
+loadbefore: [PlaceholderAPI]
+softdepend: [PlaceholderAPI]
 
 commands:
   kore:
@@ -54,8 +55,6 @@ commands:
     description: ""
   trash:
     description: ""
-  #staff:
-  #  description: ""
   vanish:
     description: ""
     aliases:
@@ -102,5 +101,3 @@ permissions:
     description: ""
   kore.trash:
     description: ""
-  #kore.staffmode:
-  #  description: ""

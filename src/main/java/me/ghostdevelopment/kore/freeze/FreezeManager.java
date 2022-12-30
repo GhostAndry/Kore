@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.UUID;
 
+
+@SuppressWarnings("SpellCheckingInspection")
 public class FreezeManager {
     public static ArrayList<Player> freezeManager = new ArrayList<>();
     public static Location[] FrozenLoc;

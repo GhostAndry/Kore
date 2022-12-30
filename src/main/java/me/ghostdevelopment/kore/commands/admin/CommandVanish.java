@@ -1,18 +1,18 @@
 package me.ghostdevelopment.kore.commands.admin;
 
 import me.ghostdevelopment.kore.Kore;
+import me.ghostdevelopment.kore.NotNull;
 import me.ghostdevelopment.kore.Utils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
-import me.ghostdevelopment.kore.NotNull;
 
 import java.util.ArrayList;
 
+@SuppressWarnings({"NullableProblems", "DataFlowIssue", "DuplicatedCode"})
 public class CommandVanish implements CommandExecutor {
 
     Kore plugin;

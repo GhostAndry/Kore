@@ -3,7 +3,6 @@ package me.ghostdevelopment.kore.commands.admin;
 import me.ghostdevelopment.kore.Functions;
 import me.ghostdevelopment.kore.Kore;
 import me.ghostdevelopment.kore.Utils;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -11,6 +10,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import me.ghostdevelopment.kore.NotNull;
 
+@SuppressWarnings({"NullableProblems", "DataFlowIssue"})
 public class CommandSpeed implements CommandExecutor {
 
     Kore plugin;
@@ -41,7 +41,7 @@ public class CommandSpeed implements CommandExecutor {
                     .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
             ));
         } else if (args.length==1) {
-            Float speed = null;
+            float speed;
 
             try {
                 speed = Float.parseFloat(args[0]);
@@ -62,13 +62,13 @@ public class CommandSpeed implements CommandExecutor {
                 Functions.setSpeed(player, "walk", speed);
                 player.sendMessage(Utils.Color(plugin.getConfig().getString("speed.set")
                         .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
-                        .replaceAll("%speed%", speed.toString())
+                        .replaceAll("%speed%", Float.toString(speed))
                 ));
             }else{
                 Functions.setSpeed(player, "fly", speed);
                 player.sendMessage(Utils.Color(plugin.getConfig().getString("speed.set")
                         .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
-                        .replaceAll("%speed%", speed.toString())
+                        .replaceAll("%speed%", Float.toString(speed))
                 ));
             }
         } else {

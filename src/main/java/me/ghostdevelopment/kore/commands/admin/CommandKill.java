@@ -10,6 +10,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import me.ghostdevelopment.kore.NotNull;
 
+@SuppressWarnings({"NullableProblems", "DataFlowIssue", "DuplicatedCode"})
 public class CommandKill implements CommandExecutor {
 
     Kore plugin;

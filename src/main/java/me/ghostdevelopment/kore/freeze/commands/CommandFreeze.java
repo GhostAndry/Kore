@@ -16,6 +16,7 @@ import java.util.Arrays;
 
 import static me.ghostdevelopment.kore.freeze.FreezeManager.*;
 
+@SuppressWarnings({"NullableProblems", "DataFlowIssue", "DuplicatedCode"})
 public class CommandFreeze implements CommandExecutor {
 
     Kore plugin;

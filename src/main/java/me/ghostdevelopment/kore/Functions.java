@@ -4,12 +4,11 @@ import me.ghostdevelopment.kore.Files.FreezeLocFile;
 import me.ghostdevelopment.kore.Files.HomesFile;
 import me.ghostdevelopment.kore.Files.SpawnFile;
 import me.ghostdevelopment.kore.Files.WarpsFile;
-import me.ghostdevelopment.kore.freeze.FreezeManager;
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffect;
 
+@SuppressWarnings({"DataFlowIssue", "unused"})
 public class Functions {
 
     private static Kore plugin;
@@ -31,11 +30,10 @@ public class Functions {
     }
     public static void setSpeed(Player player, String type, Float speed){
 
-        if(type=="walk"){
+        if(type.equals("walk")){
             player.setWalkSpeed(speed / 5.0f);
-        } else if (type=="fly"||type=="flight") {
+        } else if (type.equals("fly") || type.equals("flight")) {
             player.setFlySpeed(speed / 5.0f);
-        }else{
         }
 
     }

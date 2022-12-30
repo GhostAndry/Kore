@@ -11,6 +11,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import me.ghostdevelopment.kore.NotNull;
 
+@SuppressWarnings({"NullableProblems", "DataFlowIssue", "DuplicatedCode", "ConstantValue"})
 public class CommandGMC implements CommandExecutor {
 
     Kore plugin;

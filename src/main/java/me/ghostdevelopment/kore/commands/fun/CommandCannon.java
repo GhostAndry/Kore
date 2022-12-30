@@ -2,13 +2,11 @@ package me.ghostdevelopment.kore.commands.fun;
 
 import me.ghostdevelopment.kore.Kore;
 import me.ghostdevelopment.kore.NotNull;
-import me.ghostdevelopment.kore.Utils;
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 
+@SuppressWarnings({"NullableProblems", "DataFlowIssue", "DuplicatedCode"})
 public class CommandCannon implements CommandExecutor {
 
     Kore plugin;

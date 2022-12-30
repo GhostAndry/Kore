@@ -10,6 +10,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+@SuppressWarnings({"NullableProblems", "DataFlowIssue", "unused", "DuplicatedCode"})
 public class CommandGamemode implements CommandExecutor {
 
     Kore plugin;

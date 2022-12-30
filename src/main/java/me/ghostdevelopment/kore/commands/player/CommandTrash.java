@@ -10,11 +10,11 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 
+@SuppressWarnings({"NullableProblems", "DataFlowIssue", "DuplicatedCode"})
 public class CommandTrash implements CommandExecutor {
 
     Kore plugin;
     public CommandTrash(Kore plugin){this.plugin=plugin;}
-
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {

@@ -14,6 +14,7 @@ import me.ghostdevelopment.kore.NotNull;
 
 import static me.ghostdevelopment.kore.freeze.FreezeManager.freezeManager;
 
+@SuppressWarnings({"NullableProblems", "DataFlowIssue", "DuplicatedCode"})
 public class CommandUnfreeze implements CommandExecutor {
 
     Kore plugin;

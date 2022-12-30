@@ -12,6 +12,7 @@ import me.ghostdevelopment.kore.NotNull;
 
 import java.util.ArrayList;
 
+@SuppressWarnings({"NullableProblems", "DataFlowIssue", "DuplicatedCode", "ConstantValue"})
 public class CommandGod implements CommandExecutor {
 
     Kore plugin;
@@ -41,10 +42,10 @@ public class CommandGod implements CommandExecutor {
         if(args.length==0){
 
             if(!(godmode.contains(player))){
-                player.sendMessage(Utils.Color(plugin.getConfig().getString("god.enabled").replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))));
+                player.sendMessage(Utils.Color(plugin.getConfig().getString("god.toggled-on").replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))));
                 godmode.add(player);
             }else{
-                player.sendMessage(Utils.Color(plugin.getConfig().getString("god.disabled").replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))));
+                player.sendMessage(Utils.Color(plugin.getConfig().getString("god.toggled-off").replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))));
                 godmode.remove(player);
             }
 
@@ -52,7 +53,7 @@ public class CommandGod implements CommandExecutor {
             Player target = Bukkit.getPlayer(args[0]);
 
             if(!(godmode.contains(target))){
-                target.sendMessage(Utils.Color(plugin.getConfig().getString("god.enabled")
+                target.sendMessage(Utils.Color(plugin.getConfig().getString("god.toggled-on")
                         .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
                 ));
                 player.sendMessage(Utils.Color(plugin.getConfig().getString("god.enabled-other")
@@ -61,7 +62,7 @@ public class CommandGod implements CommandExecutor {
                     ));
                 godmode.add(target);
             }else{
-                target.sendMessage(Utils.Color(plugin.getConfig().getString("god.disabled")
+                target.sendMessage(Utils.Color(plugin.getConfig().getString("god.toggled-off")
                         .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
                 ));
                 player.sendMessage(Utils.Color(plugin.getConfig().getString("god.disabled-other")

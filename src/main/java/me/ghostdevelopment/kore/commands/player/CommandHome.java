@@ -1,4 +1,4 @@
-package me.ghostdevelopment.kore.commands.player.home;
+package me.ghostdevelopment.kore.commands.player;
 
 import me.ghostdevelopment.kore.Files.HomesFile;
 import me.ghostdevelopment.kore.Functions;
@@ -13,6 +13,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import me.ghostdevelopment.kore.NotNull;
 
+@SuppressWarnings({"NullableProblems", "DataFlowIssue", "DuplicatedCode"})
 public class CommandHome implements CommandExecutor {
 
     Kore plugin;

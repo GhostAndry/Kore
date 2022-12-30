@@ -8,6 +8,7 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 import static me.ghostdevelopment.kore.commands.admin.CommandVanish.vanished;
 
+@SuppressWarnings("ForLoopReplaceableByForEach")
 public class VanishOnJoin implements Listener {
 
     Kore plugin;

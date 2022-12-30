@@ -10,6 +10,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+@SuppressWarnings({"NullableProblems", "DataFlowIssue", "DuplicatedCode"})
 public class CommandExplode implements CommandExecutor {
 
     Kore plugin;
@@ -41,8 +42,8 @@ public class CommandExplode implements CommandExecutor {
             player.sendMessage(Utils.Color(plugin.getConfig().getString("explode.help").replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))));
         } else if (args.length==3) {
             Player target = Bukkit.getPlayer(args[0]);
-            Integer pw = Integer.valueOf(args[1]);
-            Boolean fire = Boolean.valueOf(args[2]);
+            int pw = Integer.parseInt(args[1]);
+            boolean fire = Boolean.parseBoolean(args[2]);
             try{
 
                 if(pw>plugin.getConfig().getInt("explode.max-power")){

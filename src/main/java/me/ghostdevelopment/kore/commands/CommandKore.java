@@ -15,6 +15,7 @@ import me.ghostdevelopment.kore.NotNull;
 
 import java.util.Objects;
 
+@SuppressWarnings({"NullableProblems", "DataFlowIssue", "DuplicatedCode"})
 public class CommandKore implements CommandExecutor {
 
     Kore plugin;

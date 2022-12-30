@@ -11,6 +11,7 @@ import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 
+@SuppressWarnings({"NullableProblems", "DataFlowIssue", "DuplicatedCode", "ConstantValue"})
 public class CommandFly implements CommandExecutor {
 
     Kore plugin;

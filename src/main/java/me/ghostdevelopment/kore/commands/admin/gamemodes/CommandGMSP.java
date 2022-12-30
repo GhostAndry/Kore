@@ -11,6 +11,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import me.ghostdevelopment.kore.NotNull;
 
+@SuppressWarnings({"NullableProblems", "DataFlowIssue", "DuplicatedCode"})
 public class CommandGMSP implements CommandExecutor {
     Kore plugin;
     public CommandGMSP(Kore plugin){this.plugin=plugin;}

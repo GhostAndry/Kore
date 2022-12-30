@@ -207,11 +207,4 @@ freeze:
     player-unfrozen: "%prefix% &aYou have unfrozen %player%"
     no-self: "%prefix% &cYou can't unfreeze yourself :P"
 
-# In maintenance
-#staff:
-#  enabled: true
-#
-#  staffmode-enabled: "%prefix% &aStaffMode enabled"
-#  staffmode-disabled: "%prefix% &cStaffMode disabled"
-
 

@@ -15,10 +15,13 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import static me.ghostdevelopment.kore.freeze.FreezeManager.freezeManager;
 import static me.ghostdevelopment.kore.freeze.FreezeManager.name;
 
+
+@SuppressWarnings({"NullableProblems", "DataFlowIssue", "DuplicatedCode"})
 public class FreezeListeners implements Listener {
 
     Kore plugin;
     public FreezeListeners(Kore plugin){this.plugin=plugin;}
+
     @EventHandler
     public void onPlayerDamageEvent(EntityDamageEvent event){
 

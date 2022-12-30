@@ -2,7 +2,6 @@ package me.ghostdevelopment.kore.events;
 
 import me.ghostdevelopment.kore.Kore;
 import me.ghostdevelopment.kore.commands.admin.CommandGod;
-import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

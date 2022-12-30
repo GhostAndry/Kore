@@ -12,7 +12,7 @@ import me.ghostdevelopment.kore.commands.admin.*;
 import me.ghostdevelopment.kore.commands.fun.CommandExplode;
 import me.ghostdevelopment.kore.commands.fun.CommandSmite;
 import me.ghostdevelopment.kore.commands.admin.gamemodes.*;
-import me.ghostdevelopment.kore.commands.player.home.CommandHome;
+import me.ghostdevelopment.kore.commands.player.CommandHome;
 import me.ghostdevelopment.kore.commands.player.CommandWarp;
 import me.ghostdevelopment.kore.commands.admin.CommandWarps;
 import me.ghostdevelopment.kore.events.SpawOnJoin;
@@ -20,17 +20,13 @@ import me.ghostdevelopment.kore.events.VanishOnJoin;
 import me.ghostdevelopment.kore.freeze.commands.CommandFreeze;
 import me.ghostdevelopment.kore.freeze.commands.CommandUnfreeze;
 import me.ghostdevelopment.kore.freeze.listeners.FreezeListeners;
-import me.ghostdevelopment.kore.staffmode.StaffFiles;
-import me.ghostdevelopment.kore.staffmode.commands.CommandStaff;
 import org.bukkit.plugin.java.JavaPlugin;
+
 
 public final class Kore extends JavaPlugin {
 
-    public static Kore instance;
-
     @Override
     public void onEnable() {
-        instance = this;
         // Plugin startup logic
         getLogger().info("Enabled.");
 
@@ -39,6 +35,13 @@ public final class Kore extends JavaPlugin {
 
         registerCommands();
         registerListeners();
+
+        if(getServer().getPluginManager().getPlugin("PlaceholderAPI")!=null){
+            new registerPlaceholders().register();
+        }else{
+            Console.warning("PlaceholderAPI is absent in minecraft server.\nPlaceholders won't work without it!");
+        }
+
 
         SpawnFile.setUp();
         SpawnFile.get().options().copyDefaults(true);
@@ -52,18 +55,15 @@ public final class Kore extends JavaPlugin {
         FreezeLocFile.setUp();
         FreezeLocFile.get().options().copyDefaults(true);
         FreezeLocFile.save();
-        StaffFiles.setUp();
-        StaffFiles.get().options().copyDefaults(true);
-        StaffFiles.save();
 
     }
     @Override
     public void onDisable() {
         // Plugin shutdown logic
         getLogger().info("Disabled");
-        instance = null;
     }
 
+    @SuppressWarnings("DataFlowIssue")
     public void registerCommands(){
 
         getCommand("kore").setExecutor(new CommandKore(this));
@@ -83,7 +83,6 @@ public final class Kore extends JavaPlugin {
         getCommand("setspawn").setExecutor(new CommandSetspawn(this));
         getCommand("spawn").setExecutor(new CommandSpawn(this));
 
-        //getCommand("staff").setExecutor(new CommandStaff(this));
         getCommand("vanish").setExecutor(new CommandVanish(this));
 
         getCommand("teleport").setExecutor(new CommandTeleport(this));
@@ -96,7 +95,6 @@ public final class Kore extends JavaPlugin {
         getCommand("speed").setExecutor(new CommandSpeed(this));
         getCommand("home").setExecutor(new CommandHome(this));
         getCommand("trash").setExecutor(new CommandTrash(this));
-
 
         /*
         TODO: Staff Mode
@@ -120,7 +118,4 @@ public final class Kore extends JavaPlugin {
 
     }
 
-    public static Kore getInstance() {
-        return instance;
-    }
 }
