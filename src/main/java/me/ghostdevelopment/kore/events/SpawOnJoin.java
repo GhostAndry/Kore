@@ -1,5 +1,6 @@
 package me.ghostdevelopment.kore.events;
 
+import me.ghostdevelopment.kore.Console;
 import me.ghostdevelopment.kore.Files.SpawnFile;
 import me.ghostdevelopment.kore.Kore;
 import org.bukkit.Bukkit;
@@ -18,23 +19,28 @@ public class SpawOnJoin implements Listener {
     @EventHandler
     public void onPlayerJoinEvent(PlayerJoinEvent event){
 
-        if(plugin.getConfig().getBoolean("spawn.on-join")){
+        if(SpawnFile.get().contains("spawn")) {
+            if (plugin.getConfig().getBoolean("spawn.on-join")) {
 
-            Player player = event.getPlayer();
+                Player player = event.getPlayer();
 
-            Location loc;
-            String name = "spawn";
+                Location loc;
+                String name = "spawn";
 
-            double X = SpawnFile.get().getDouble(name + ".x");
-            double Y = SpawnFile.get().getDouble(name + ".y");
-            double Z = SpawnFile.get().getDouble(name + ".z");
-            float Yaw = (float) SpawnFile.get().getDouble(name + ".yaw");
-            float Pitch = (float) SpawnFile.get().getDouble(name + ".pitch");
-            String world = SpawnFile.get().getString(name + ".world");
-            loc = new Location(Bukkit.getWorld(world), X, Y, Z, Yaw, Pitch);
+                double X = SpawnFile.get().getDouble(name + ".x");
+                double Y = SpawnFile.get().getDouble(name + ".y");
+                double Z = SpawnFile.get().getDouble(name + ".z");
+                float Yaw = (float) SpawnFile.get().getDouble(name + ".yaw");
+                float Pitch = (float) SpawnFile.get().getDouble(name + ".pitch");
+                String world = SpawnFile.get().getString(name + ".world");
+                loc = new Location(Bukkit.getWorld(world), X, Y, Z, Yaw, Pitch);
 
-            player.teleport(loc);
+                player.teleport(loc);
 
+            }
+
+        }else{
+            Console.warning("Spawn location was not set!");
         }
 
     }

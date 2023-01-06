@@ -35,7 +35,7 @@ public class CommandSpawn implements CommandExecutor {
         }
 
         if(!SpawnFile.get().contains("spawn")){
-            player.sendMessage(Utils.Color(plugin.getConfig().getString("messages.spawn.not-set")
+            player.sendMessage(Utils.Color(plugin.getConfig().getString("spawn.not-set")
                     .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
             ));
             return false;
@@ -55,7 +55,7 @@ public class CommandSpawn implements CommandExecutor {
             loc = new Location(Bukkit.getWorld(world), X, Y, Z, Yaw, Pitch);
 
             player.teleport(loc);
-            player.sendMessage(Utils.Color(plugin.getConfig().getString("messages.spawn.teleport")
+            player.sendMessage(Utils.Color(plugin.getConfig().getString("spawn.teleport")
                     .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
             ));
 
@@ -73,15 +73,15 @@ public class CommandSpawn implements CommandExecutor {
             loc = new Location(Bukkit.getWorld(world), X, Y, Z, Yaw, Pitch);
 
             target.teleport(loc);
-            target.sendMessage(Utils.Color(plugin.getConfig().getString("messages.spawn.teleport")
+            target.sendMessage(Utils.Color(plugin.getConfig().getString("spawn.teleport")
                     .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
             ));
-            player.sendMessage(Utils.Color(plugin.getConfig().getString("messages.spawn.teleport")
+            player.sendMessage(Utils.Color(plugin.getConfig().getString("spawn.teleport")
                     .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
-                    .replaceAll("%prefix%", plugin.getConfig().getString("messages.spawn.teleport-other"))
+                    .replaceAll("%prefix%", plugin.getConfig().getString("spawn.teleport-other"))
             ));
         }else{
-            player.sendMessage(Utils.Color(plugin.getConfig().getString("messages.spawn.help")
+            player.sendMessage(Utils.Color(plugin.getConfig().getString("spawn.help")
                     .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
             ));
         }

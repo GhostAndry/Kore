@@ -26,13 +26,14 @@ public class CommandSetspawn implements CommandExecutor {
         }
         if(!(player.hasPermission("kore.setspawn")||player.hasPermission("kore.*")||player.hasPermission("*"))){
             player.sendMessage(Utils.Color(plugin.getConfig().getString("messages.noPermission")
-                    .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))));
+                    .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
+            ));
             return false;
         }
 
         Location loc = player.getLocation();
         Functions.setSpawnLoc(loc);
-        player.sendMessage(Utils.Color(plugin.getConfig().getString("messages.setspawn.set")
+        player.sendMessage(Utils.Color(plugin.getConfig().getString("spawn.setspawn")
                 .replaceAll("%prefix%", plugin.getConfig().getString("messages.prefix"))
         ));
 
