@@ -9,19 +9,15 @@ import me.ghostdevelopment.kore.commands.player.CommandTrash;
 import me.ghostdevelopment.kore.events.GodMode;
 import me.ghostdevelopment.kore.commands.*;
 import me.ghostdevelopment.kore.commands.admin.*;
-import me.ghostdevelopment.kore.commands.fun.CommandExplode;
-import me.ghostdevelopment.kore.commands.fun.CommandSmite;
+import me.ghostdevelopment.kore.commands.fun.*;
 import me.ghostdevelopment.kore.commands.admin.gamemodes.*;
-import me.ghostdevelopment.kore.commands.player.CommandHome;
-import me.ghostdevelopment.kore.commands.player.CommandWarp;
-import me.ghostdevelopment.kore.commands.admin.CommandWarps;
+import me.ghostdevelopment.kore.commands.player.*;
 import me.ghostdevelopment.kore.events.SpawOnJoin;
 import me.ghostdevelopment.kore.events.VanishOnJoin;
 import me.ghostdevelopment.kore.freeze.commands.CommandFreeze;
 import me.ghostdevelopment.kore.freeze.commands.CommandUnfreeze;
 import me.ghostdevelopment.kore.freeze.listeners.FreezeListeners;
 import org.bukkit.plugin.java.JavaPlugin;
-
 
 public final class Kore extends JavaPlugin {
 
