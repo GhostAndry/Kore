@@ -25,7 +25,7 @@ C:\Users\andre\IdeaProjects\Kore\src\main\java\me\ghostdevelopment\kore\commands
 C:\Users\andre\IdeaProjects\Kore\src\main\java\me\ghostdevelopment\kore\commands\impl\player\CommandTpa.java
 C:\Users\andre\IdeaProjects\Kore\src\main\java\me\ghostdevelopment\kore\commands\impl\player\CommandTrash.java
 C:\Users\andre\IdeaProjects\Kore\src\main\java\me\ghostdevelopment\kore\commands\KoreCommand.java
-C:\Users\andre\IdeaProjects\Kore\src\main\java\me\ghostdevelopment\kore\events\ChatManager.java
+C:\Users\andre\IdeaProjects\Kore\src\main\java\me\ghostdevelopment\kore\events\ChatEvents.java
 C:\Users\andre\IdeaProjects\Kore\src\main\java\me\ghostdevelopment\kore\events\GodMode.java
 C:\Users\andre\IdeaProjects\Kore\src\main\java\me\ghostdevelopment\kore\events\JoinMSG.java
 C:\Users\andre\IdeaProjects\Kore\src\main\java\me\ghostdevelopment\kore\events\Spawn.java

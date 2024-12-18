@@ -10,7 +10,6 @@ me\ghostdevelopment\kore\utils\Metrics$AdvancedPie.class
 me\ghostdevelopment\kore\commands\impl\player\CommandTpa.class
 me\ghostdevelopment\kore\utils\Metrics$SimpleBarChart.class
 me\ghostdevelopment\kore\commands\impl\admin\CommandSpeed.class
-me\ghostdevelopment\kore\events\ChatManager.class
 me\ghostdevelopment\kore\Kore.class
 me\ghostdevelopment\kore\utils\Metrics$SingleLineChart.class
 me\ghostdevelopment\kore\events\GodMode.class
@@ -33,6 +32,7 @@ me\ghostdevelopment\kore\commands\impl\admin\CommandFly.class
 me\ghostdevelopment\kore\commands\impl\admin\CommandItem.class
 me\ghostdevelopment\kore\utils\Metrics.class
 me\ghostdevelopment\kore\commands\impl\admin\CommandKillMobs.class
+me\ghostdevelopment\kore\events\ChatEvents.class
 me\ghostdevelopment\kore\utils\Console.class
 me\ghostdevelopment\kore\commands\impl\fun\CommandSmite.class
 me\ghostdevelopment\kore\commands\impl\admin\CommandSetspawn.class

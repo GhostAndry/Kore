@@ -21,7 +21,6 @@ import java.util.logging.Logger;
 
 public class Spawn implements Listener {
 
-    private static final Logger logger = Bukkit.getLogger();
     private static final int defaultY = Kore.calculateY();
 
     @Getter @Setter
@@ -31,19 +30,15 @@ public class Spawn implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onPlayerJoin(PlayerJoinEvent event) {
-        logger.info("[Spawn] Handling PlayerJoinEvent for player: " + event.getPlayer().getName());
 
         if (blacklist) {
             if (getWorlds().contains(event.getPlayer().getWorld())) {
-                logger.info("[Spawn] World is blacklisted, skipping.");
                 return;
             }
         } else {
             if (getWorlds().contains(event.getPlayer().getWorld())) {
-                logger.info("[Spawn] Player is in a managed world. Checking conditions...");
                 if (isSpawnConfigured() && SettingsFile.getFile().getBoolean("spawn.enabled")) {
                     if (SettingsFile.getFile().getBoolean("spawn.on-join")) {
-                        logger.info("[Spawn] Teleporting player to spawn.");
                         event.getPlayer().teleport(Functions.getSpawnLocation());
                     }
                 }
@@ -53,19 +48,15 @@ public class Spawn implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onPlayerDeath(PlayerRespawnEvent event) {
-        logger.info("[Spawn] Handling PlayerRespawnEvent for player: " + event.getPlayer().getName());
 
         if (blacklist) {
             if (getWorlds().contains(event.getPlayer().getWorld())) {
-                logger.info("[Spawn] World is blacklisted, skipping.");
                 return;
             }
         } else {
             if (getWorlds().contains(event.getPlayer().getWorld())) {
-                logger.info("[Spawn] Player is in a managed world. Checking conditions...");
                 if (isSpawnConfigured() && SettingsFile.getFile().getBoolean("spawn.enabled")) {
                     if (SettingsFile.getFile().getBoolean("spawn.on-death")) {
-                        logger.info("[Spawn] Teleporting player to spawn on death.");
                         event.getPlayer().teleport(Functions.getSpawnLocation());
                     }
                 }
@@ -75,20 +66,16 @@ public class Spawn implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onPlayerVoid(PlayerMoveEvent event) {
-        logger.info("[Spawn] Handling PlayerMoveEvent for player: " + event.getPlayer().getName());
 
         if (blacklist) {
             if (getWorlds().contains(event.getPlayer().getWorld())) {
-                logger.info("[Spawn] World is blacklisted, skipping.");
                 return;
             }
         } else {
             if (getWorlds().contains(event.getPlayer().getWorld())) {
-                logger.info("[Spawn] Player is in a managed world. Checking conditions...");
                 if (isSpawnConfigured() && SettingsFile.getFile().getBoolean("spawn.enabled")) {
                     if (SettingsFile.getFile().getBoolean("spawn.on-void")) {
                         if (event.getPlayer().getLocation().getY() < defaultY) {
-                            logger.info("[Spawn] Teleporting player to spawn due to void.");
                             event.getPlayer().teleport(Functions.getSpawnLocation());
                         }
                     }
@@ -105,7 +92,6 @@ public class Spawn implements Listener {
                 && StorageFile.getFile().contains("spawn.yaw")
                 && StorageFile.getFile().contains("spawn.pitch");
 
-        logger.info("[Spawn] Spawn configuration status: " + configured);
         return configured;
     }
 }

@@ -1,3 +1,6 @@
+
+messages: en
+
 gamemode:
   enabled: true
 fly:
@@ -67,11 +70,10 @@ chat:
   group-formats:
   #  default: "[default] %name%&r: %message%"
   #  admin: "[admin] %name%&r: %message%"
-  
-  blacklist-words:
+  blacklist:
     - fuck
     - shit
-messages: en
+
 
 server:
   join-msg: "&8[&a+&8] &f%player%"
