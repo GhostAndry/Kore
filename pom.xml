@@ -6,7 +6,7 @@
 
     <groupId>me.ghostdevelopment</groupId>
     <artifactId>Kore</artifactId>
-    <version>1.14.2</version>
+    <version>1.14.3</version>
     <packaging>jar</packaging>
 
     <name>KoreRecoded</name>

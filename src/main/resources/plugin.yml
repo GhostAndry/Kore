@@ -1,5 +1,5 @@
 name: Kore
-version: 1.14.2
+version: 1.14.3
 main: me.ghostdevelopment.kore.Kore
 load: STARTUP
 api-version: 1.21
