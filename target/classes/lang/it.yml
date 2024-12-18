@@ -1,0 +1,138 @@
+prefix: "&b&lKore&f:"
+no-permissions: "%prefix% &cNon hai permessi."
+only-players: "%prefix% &cSolo giocatori possono eseguire questo commando!"
+command-disabled: "%prefix% &cQuesto commando è disabilitato!"
+invalid-target: "%prefix% &cGiocatore non trovato."
+lang-name: "Italiano"
+messages:
+  successfully-set: "%prefix% &aLingua del file cambiata con successo in %lang%"
+  not-exist: "%prefix% &cImpossibile caricare le lingue perché il file non esiste!"
+reload:
+  success: "%prefix% &aReload eseguito con successo!"
+  error: "%prefix% &cErrore interno. Guarda la console per errori."
+gamemode:
+  changed: "%prefix% &aLa tua Gamemode è stata cambiata in &e&o%gamemode%"
+  changed-other: "%prefix% &aLa gamemode di %player% è stata cambiata in &e&o%gamemode%"
+  usage:
+    console: "%prefix% &cUso: /gamemode <gamemode> <player>"
+    player: "%prefix% &cUso: /gamemode <gamemode> &1[player]"
+fly:
+  enabled: "%prefix% &aFly abilitata."
+  disabled: "%prefix% &cFly disabilitata."
+  enabled-other: "%prefix% &aFly abilitata per %player%."
+  disabled-other: "%prefix% &cFly disabilitata per %player%."
+  usage:
+    console: "%prefix% &cUso: /fly <player>"
+    player: "%prefix% &cUso: /fly &1[player]"
+teleport:
+  teleported: "%prefix% &aTeletrasportato a %loc%"
+  teleported-other: "%prefix% &aTeletrasportato %player% a %loc%"
+  usage:
+    player: "%prefix% &cUso: /teleport <player| x y z > &1[player| x y z ]"
+    console: "%prefix% &cUso: /teleport <player| x y z > <player>"
+god:
+  enabled: "%prefix% &aGodmode abilitata."
+  disabled: "%prefix% &cGodmode disabilitata."
+  enabled-other: "%prefix% &aGodmode abilitata per %player%."
+  disabled-other: "%prefix% &cGodmode disabilitata per %player%."
+  usage:
+    player: "%prefix% &cUso: /god &1[player]"
+    console: "%prefix% &cUso: /god <player>"
+heal:
+  healed: "%prefix% &aCurato!"
+  healed-other: "%prefix% &a%player% è stato Curato!"
+  usage:
+    player: "%prefix% &cUso: /heal &1[player]"
+    console: "%prefix% &cUso: /heal <player>"
+vanish:
+  enabled: "%prefix% &aVanish abilitata."
+  disabled: "%prefix% &aVanish disabilitata."
+  enabled-other: "%prefix% &aVanish abilitata per &e&o%player%."
+  disabled-other: "%prefix% &aVanish disabilitata per &e&o%player%."
+  usage:
+    player: "%prefix% &cUso: /vanish &1[player]"
+    console: "%prefix% &cUso: /vanish <player>"
+spawn:
+  set: "%prefix% &aSpawn settato a %x% %y% %z%."
+  teleported: "%prefix% &aTeletrasportato allo Spawn!"
+  teleported-other: "%prefix% &aTeletrasportato %player% allo spawn"
+  nonexistent: "%prefix% &cLo spawn point non è creato"
+  usage:
+    admin: "%prefix% &cUso: /setspawn"
+    player: "%prefix% &cUso: /spawn &1[player]"
+    console: "%prefix% &cUso: /spawn <player>"
+orbitalcannon:
+  shoot: "%prefix% &aIl cannone orbitale sparato a %coords%."
+  tell: "%prefix% &c&lSei stato colpito dal cannone orbitale!"
+  usage: "%prefix% &cUso: /orbitalcannon <player | x y z>"
+smite:
+  smited-player: "%prefix% &aHai fulminato %player%"
+  usage: "%prefix% &cUso: /smite <player>"
+kill:
+  killed: "%prefix% &aHai Ucciso %player%."
+  usage:
+    player: "%prefix% &cUso: /kill &1[player]"
+    console: "%prefix% &cUso: /kill <player>"
+warp:
+  warped: "%prefix% &aSei stato teletrasportato al warp %warp%"
+  warped-other: "%prefix% &aHai teletrasportato %player% al warp %warp%"
+  not-found: "%prefix% &cWarp non trovato."
+  admin:
+    added: "%prefix% &aWarp %warp% creato con successo."
+    already-exist: "%prefix% &cWarp %warp% esiste gia"
+    removed: "%prefix% &aWarp %warp% eliminato con successo."
+  usage:
+    player: "%prefix% &cUso: /warp <name> &1[player]"
+    console: "%prefix% &cUso: /warp <name> <player>"
+    admin:
+      add: "%prefix% &cUso: /warp add <name>"
+      remove: "%prefix% &cUso: /warp remove <name>"
+home:
+  teleported: "%prefix% &aSei stato teletrasportato nella tua casa."
+  teleported-other: "%prefix% &aHai teletrasportato %player% alla sua casa."
+  not-set: "%prefix% &cNon hai impostato la tua casa."
+  set: "%prefix% &aLa tua Casa è stata impostata nella tua posizione."
+  removed: "%prefix% &cLa tua Casa è stata rimossa."
+  usage: "%prefix% &cUso:67/home &1[set|remove]"
+speed:
+  set: "%prefix% &aLa tua Velocita è stata imposta a %speed%"
+  set-other: "%prefix% &aLa Velocita di %player% è stata imposta a %speed%"
+  invalid-value: "%prefix% &cVelocita Imposta Invalida."
+  invalid-type:
+    "%prefix% &cTipo di Velocita Imposta è Invalida. Ci sono Queste Velocita: Walk or Walking, Fly
+        or Flight"
+  usage:
+    player: "%prefix% &cUso: /speed <value> &1[player] [type]"
+    console: "%prefix% &cUso: /speed <value> <player> <type>"
+killmobs:
+  killed: "%prefix% &aUcciso tutti i mobs ostili"
+  usage: "%prefix% &cUso: /killmobs"
+spawnmob:
+  spawned: "%prefix% &a%num% mobs sono stati creati!"
+  invalid: "%prefix% &cEntità invalida"
+  usage: "%prefix% &cUso: /spawnmobs <mob> [num]"
+tpa:
+  request: |-
+    %prefix% &6%player% ha richiesto di teletrasportarsi da te.
+    &7Digita &e/tpa accept &7o &e/tpa deny.
+  request-sent: |-
+    %prefix% &6Hai inviato una richiesta di teletrasporto a %player%.
+  accepted: "%prefix% &aRichiesta di teletrasporto da %player% accettata."
+  denied:
+    from: "%prefix% &cRichiesta di teletrasporto da %player% negata."
+    to: "%prefix% &cRichiesta di teletrasporto a %player% negata."
+  already-requested: "%prefix% &cHai già richiesto un teletrasporto."
+  usage: "%prefix% &cUso: /tpa <accept|deny|player_name>"
+  expired:
+    from: "%prefix% &cLa richiesta di teletrasporto da %player% è scaduta."
+    to: "%prefix% &cLa richiesta di teletrasporto a %player% è scaduta."
+  no-pending-request: "%prefix% &cNon hai richieste di teletrasporto in sospeso."
+  player-not-found: "%prefix% &cIl giocatore specificato non è online."
+  self-tpa-request: "%prefix% &cNon puoi inviare una richiesta a te stesso!"
+item:
+  usage: "&eUsage: /item <material> [quantity]"
+  invalid-material: "&cInvalid material: &e%material%"
+  invalid-quantity: "&cQuantity must be a positive number."
+  invalid-quantity-format: "&cInvalid number format for quantity."
+  success: "&aYou have received &e%quantity% &aof &e%material%."
+

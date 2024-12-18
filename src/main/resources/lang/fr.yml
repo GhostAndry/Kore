@@ -1,0 +1,137 @@
+prefix: "&b&lKore&f:"
+no-permissions: "%prefix% &cVous n'avez pas les permissions nécessaires."
+only-players: "%prefix% &cSeuls les joueurs peuvent exécuter cette commande !"
+command-disabled: "%prefix% &cCette commande est désactivée"
+invalid-target: "%prefix% &cJoueur introuvable."
+lang-name: "Français"
+messages:
+  successfully-set: "%prefix% &aFichier de langue changé avec succès en %lang%"
+  not-exist: "%prefix% &cImpossible de charger les langues car le fichier n'existe pas !"
+reload:
+  success: "%prefix% &aRechargement réussi !"
+  error: "%prefix% &cErreur interne. Vérifiez la console pour plus d'informations."
+gamemode:
+  changed: "%prefix% &aVotre mode de jeu a été modifié en &e&o%gamemode%"
+  changed-other: "%prefix% &aLe mode de jeu de %player% a été modifié en &e&o%gamemode%"
+  usage:
+    console: "%prefix% &cUtilisation: /gamemode <gamemode> <joueur>"
+    player: "%prefix% &cUtilisation: /gamemode <gamemode> &1[joueur]"
+fly:
+  enabled: "%prefix% &aFly activé."
+  disabled: "%prefix% &cFly désactivé."
+  enabled-other: "%prefix% &aFly activé pour %player%."
+  disabled-other: "%prefix% &cFly désactivé pour %player%."
+  usage:
+    console: "%prefix% &cUtilisation: /fly <joueur>"
+    player: "%prefix% &cUtilisation: /fly &1[joueur]"
+teleport:
+  teleported: "%prefix% &aTéléporté à %loc%"
+  teleported-other: "%prefix% &aTéléporté %player% à %loc%"
+  usage:
+    player: "%prefix% &cUtilisation: /teleport <joueur| x y z > &1[joueur| x y z ]"
+    console: "%prefix% &cUtilisation: /teleport <joueur| x y z > <joueur>"
+god:
+  enabled: "%prefix% &aMode Dieu activé."
+  disabled: "%prefix% &cMode Dieu désactivé."
+  enabled-other: "%prefix% &aMode Dieu activé pour %player%."
+  disabled-other: "%prefix% &cMode Dieu désactivé pour %player%."
+  usage:
+    player: "%prefix% &cUtilisation: /god &1[joueur]"
+    console: "%prefix% &cUtilisation: /god <joueur>"
+heal:
+  healed: "%prefix% &aSoigné !"
+  healed-other: "%prefix% &a%player% a été soigné !"
+  usage:
+    player: "%prefix% &cUtilisation: /heal &1[joueur]"
+    console: "%prefix% &cUtilisation: /heal <joueur>"
+vanish:
+  enabled: "%prefix% &aDisparition activée."
+  disabled: "%prefix% &aDisparition désactivée."
+  enabled-other: "%prefix% &aDisparition activée pour &e&o%player%."
+  disabled-other: "%prefix% &aDisparition désactivée pour &e&o%player%."
+  usage:
+    player: "%prefix% &cUtilisation: /vanish &1[joueur]"
+    console: "%prefix% &cUtilisation: /vanish <joueur>"
+spawn:
+  set: "%prefix% &aLe point de spawn a été défini à %x% %y% %z%."
+  teleported: "%prefix% &aTéléporté au spawn"
+  teleported-other: "%prefix% &aTéléporté %player% au spawn"
+  nonexistent: "%prefix% &cLe point de spawn n'a pas encore été défini"
+  usage:
+    admin: "%prefix% &cUtilisation: /setspawn"
+    player: "%prefix% &cUtilisation: /spawn &1[joueur]"
+    console: "%prefix% &cUtilisation: /spawn <joueur>"
+orbitalcannon:
+  shoot: "%prefix% &aLe canon orbital a tiré un coup à %coords%."
+  tell: "%prefix% &c&lVous avez été touché par un tir de canon orbital !"
+  usage: "%prefix% &cUtilisation: /orbitalcannon <joueur | x y z>"
+smite:
+  smited-player: "%prefix% &aFoudroyé %player%"
+  usage: "%prefix% &cUtilisation: /smite <joueur>"
+kill:
+  killed: "%prefix% &a%player% a été tué."
+  usage:
+    player: "%prefix% &cUtilisation: /kill &1[joueur]"
+    console: "%prefix% &cUtilisation: /kill <joueur>"
+warp:
+  warped: "%prefix% &aVous avez été téléporté à %warp%"
+  warped-other: "%prefix% &aVous avez téléporté %player% à %warp%"
+  not-found: "%prefix% &cWarp introuvable."
+  admin:
+    added: "%prefix% &a%warp% a été ajouté avec succès."
+    already-exist: "%prefix% &c%warp% existe déjà"
+    removed: "%prefix% &a%warp% a été supprimé avec succès."
+  usage:
+    player: "%prefix% &cUtilisation: /warp <nom> &1[joueur]"
+    console: "%prefix% &cUtilisation: /warp <nom> <joueur>"
+    admin:
+      add: "%prefix% &cUtilisation: /warp add <nom>"
+      remove: "%prefix% &cUtilisation: /warp remove <nom>"
+home:
+  teleported: "%prefix% &aVous avez été téléporté à votre domicile."
+  teleported-other: "%prefix% &aVous avez téléporté %player% à sa maison."
+  not-set: "%prefix% &cVous n'avez pas encore défini votre maison."
+  set: "%prefix% &aVotre maison a été définie à votre position."
+  removed: "%prefix% &cVotre maison a été supprimée."
+  usage: "%prefix% &cUtilisation:/home &1[set|remove]"
+speed:
+  set: "%prefix% Votre vitesse a été réglée sur %speed%"
+  set-other: "%prefix% La vitesse de %player% a été réglée sur %speed%"
+  invalid-value: "%prefix% &cValeur de vitesse non valide"
+  invalid-type:
+    "%prefix% &cType de vitesse non valide. Types de vitesse: Walk ou Walking, Fly
+        ou Flight"
+  usage:
+    player: "%prefix% &cUtilisation: /speed <valeur> &1[joueur] [type]"
+    console: "%prefix% &cUtilisation: /speed <valeur> <joueur> <type>"
+killmobs:
+  killed: "%prefix% &aTous les mobs hostiles ont été tués"
+  usage: "%prefix% &cUtilisation: /killmobs"
+spawnmob:
+  spawned: '%prefix% &a%num% créatures ont été créées !'
+  invalid: '%prefix% &cEntité invalide'
+  usage: '%prefix% &cUtilisation : /spawnmob <créature> [nombre]'
+tpa:
+  request: |-
+    %prefix% &6%player% a demandé à se téléporter vers vous.
+    &7Tapez &e/tpa accept &7ou &e/tpa deny.
+  request-sent: |-
+    %prefix% &6Vous avez envoyé une demande de téléportation à %player%.
+  accepted: "%prefix% &aDemande de téléportation de %player% acceptée."
+  denied:
+    from: "%prefix% &cDemande de téléportation de %player% refusée."
+    to: "%prefix% &cDemande de téléportation à %player% refusée."
+  already-requested: "%prefix% &cVous avez déjà demandé une téléportation."
+  usage: "%prefix% &cUtilisation : /tpa <accept|deny|player_name>"
+  expired:
+    from: "%prefix% &cLa demande de téléportation de %player% a expiré."
+    to: "%prefix% &cLa demande de téléportation à %player% a expiré."
+  no-pending-request: "%prefix% &cVous n'avez pas de demande de téléportation en attente."
+  player-not-found: "%prefix% &cLe joueur spécifié n'est pas en ligne."
+  self-tpa-request: "%prefix% &cVous ne pouvez pas envoyer une demande à vous-même !"
+item:
+  usage: "&eUtilisation: /item <matériau> [quantité]"
+  invalid-material: "&cMatériau invalide: &e%material%"
+  invalid-quantity: "&cLa quantité doit être un nombre positif."
+  invalid-quantity-format: "&cFormat de nombre invalide pour la quantité."
+  success: "&aVous avez reçu &e%quantity% &ade &e%material%."

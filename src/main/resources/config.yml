@@ -1,0 +1,95 @@
+gamemode:
+  enabled: true
+fly:
+  enabled: true
+teleport:
+  enabled: true
+godmode:
+  enabled: true
+heal:
+  enabled: true
+vanish:
+  enabled: true
+spawn:
+  enabled: true
+  on-join: true
+  on-death: true
+  on-void: true
+
+  worlds:
+    blacklist: true
+    list:
+      - world1
+      - world2
+
+trash:
+  enabled: true
+orbitalcannon:
+  enabled: true
+  tell-to-victim: true
+smite:
+  enabled: true
+kill:
+  enabled: true
+warp:
+  enabled: true
+home:
+  enabled: true
+speed:
+  enabled: true
+killmobs:
+  enabled: true
+  async: true #recomanded: true
+spawnmob:
+  enabled: true
+  async: true #recomanded: true
+tpa:
+  enabled: true
+  expiration: 60 #in seconds
+item:
+  enabled: true
+
+chat:
+  enabled: true
+  
+  # Placeholders:
+  # %message%` - the chat message
+  # %name% - the player's name
+  # %displayname% - the player's display name / nickname
+  # %world% - the world name of the player's current world
+  # %prefix% - the player's highest priority prefix
+  # %suffix% - the player's highest priority suffix
+  # %prefixes% - the player's prefixes sorted by the highest priority
+  # %suffixes% - the player's suffixes sorted by the highest priority
+  # %username-color% - the player's or the group's username color
+  # %message-color% - the player's or the group's message color
+  chat-format: "%prefix%%name%&r: %message%"
+  group-formats:
+  #  default: "[default] %name%&r: %message%"
+  #  admin: "[admin] %name%&r: %message%"
+  
+  blacklist-words:
+    - fuck
+    - shit
+messages: en
+
+server:
+  join-msg: "&8[&a+&8] &f%player%"
+  leave-msg: "&8[&c-&8] &f%player%"
+
+world-manipulator:
+  enable: false
+  rules:
+    anti-hunger: true
+    anti-weather: true
+    anti-join-message: true
+    anti-mob-spawn: true
+
+  worlds:
+    blacklist: true
+    list:
+      - world1
+      - world2
+
+
+

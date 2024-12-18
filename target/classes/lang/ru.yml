@@ -1,0 +1,135 @@
+prefix: "&b&lKore&f:"
+no-permissions: "%prefix% &cУ вас нет разрешений."
+only-players: "%prefix% &cТолько игроки могут выполнить эту команду!"
+command-disabled: "%prefix% &cЭта команда отключена"
+invalid-target: "%prefix% &cИгрок не найден."
+lang-name: "Русский"
+messages:
+  successfully-set: "%prefix% &aУспешно изменен языковой файл на %lang%"
+  not-exist: "%prefix% &cНевозможно загрузить языки, потому что файл не существует!"
+reload:
+  success: "%prefix% &aПерезагрузка прошла успешно!"
+  error: "%prefix% &cВнутренняя ошибка. Проверьте консоль для получения дополнительной информации."
+gamemode:
+  changed: "%prefix% &aВаш режим игры был изменен на &e&o%gamemode%"
+  changed-other: "%prefix% &aРежим игры %player% был изменен на &e&o%gamemode%"
+  usage:
+    console: "%prefix% &cИспользование: /gamemode <gamemode> <player>"
+    player: "%prefix% &cИспользование: /gamemode <gamemode> &1[player]"
+fly:
+  enabled: "%prefix% &aПолет включен."
+  disabled: "%prefix% &cПолет отключен."
+  enabled-other: "%prefix% &aПолет включен для %player%."
+  disabled-other: "%prefix% &cПолет отключен для %player%."
+  usage:
+    console: "%prefix% &cИспользование: /fly <player>"
+    player: "%prefix% &cИспользование: /fly &1[player]"
+teleport:
+  teleported: "%prefix% &aТелепортирован к %loc%"
+  teleported-other: "%prefix% &a%player% телепортирован к %loc%"
+  usage:
+    player: "%prefix% &cИспользование: /teleport <player| x y z > &1[player| x y z ]"
+    console: "%prefix% &cИспользование: /teleport <player| x y z > <player>"
+god:
+  enabled: "%prefix% &aРежим бога включен."
+  disabled: "%prefix% &cРежим бога отключен."
+  enabled-other: "%prefix% &aРежим бога включен для %player%."
+  disabled-other: "%prefix% &cРежим бога отключен для %player%."
+  usage:
+    player: "%prefix% &cИспользование: /god &1[player]"
+    console: "%prefix% &cИспользование: /god <player>"
+heal:
+  healed: "%prefix% &aИсцелен!"
+  healed-other: "%prefix% &a%player% был исцелен!"
+  usage:
+    player: "%prefix% &cИспользование: /heal &1[player]"
+    console: "%prefix% &cИспользование: /heal <player>"
+vanish:
+  enabled: "%prefix% &aНевидимость включена."
+  disabled: "%prefix% &aНевидимость отключена."
+  enabled-other: "%prefix% &aНевидимость включена для &e&o%player%."
+  disabled-other: "%prefix% &aНевидимость отключена для &e&o%player%."
+  usage:
+    player: "%prefix% &cИспользование: /vanish &1[player]"
+    console: "%prefix% &cИспользование: /vanish <player>"
+spawn:
+  set: "%prefix% &aТочка спавна установлена на %x% %y% %z%."
+  teleported: "%prefix% &aТелепортирован на спавн"
+  teleported-other: "%prefix% &a%player% телепортирован на спавн"
+  nonexistent: "%prefix% &cТочка спавна еще не установлена"
+  usage:
+    admin: "%prefix% &cИспользование: /setspawn"
+    player: "%prefix% &cИспользование: /spawn &1[player]"
+    console: "%prefix% &cИспользование: /spawn <player>"
+orbitalcannon:
+  shoot: "%prefix% &aОрбитальная пушка выпустила выстрел в %coords%."
+  tell: "%prefix% &c&lВы были поражены выстрелом орбитальной пушки!"
+  usage: "%prefix% &cИспользование: /orbitalcannon <player | x y z>"
+smite:
+  smited-player: "%prefix% &a%player% был поражен молнией."
+  usage: "%prefix% &cИспользование: /smite <player>"
+kill:
+  killed: "%prefix% &a%player% был убит."
+  usage:
+    player: "%prefix% &cИспользование: /kill &1[player]"
+    console: "%prefix% &cИспользование: /kill <player>"
+warp:
+  warped: "%prefix% &aВы были перемещены к %warp%"
+  warped-other: "%prefix% &aВы переместили %player% к %warp%"
+  not-found: "%prefix% &cWarp не найден."
+  admin:
+    added: "%prefix% &a%warp% был успешно добавлен."
+    already-exist: "%prefix% &c%warp% уже существует"
+    removed: "%prefix% &a%warp% был успешно удален."
+  usage:
+    player: "%prefix% &cИспользование: /warp <name> &1[player]"
+    console: "%prefix% &cИспользование: /warp <name> <player>"
+    admin:
+      add: "%prefix% &cИспользование: /warp add <name>"
+      remove: "%prefix% &cИспользование: /warp remove <name>"
+home:
+  teleported: "%prefix% &aВы были телепортированы домой."
+  teleported-other: "%prefix% &aВы телепортировали %player% в его дом."
+  not-set: "%prefix% &cВы еще не установили свой дом."
+  set: "%prefix% &aВаш дом установлен на вашей текущей позиции."
+  removed: "%prefix% &cВаш дом был удален."
+  usage: "%prefix% &cИспользование /home &1[set|remove]"
+speed:
+  set: "%prefix% Ваша скорость была установлена на %speed%"
+  set-other: "%prefix% Скорость %player% была установлена на %speed%"
+  invalid-value: "%prefix% &cНедопустимое значение скорости"
+  invalid-type: "%prefix% &cНедопустимый тип скорости. Типы скорости: Walk или Walking, Fly или Flight"
+  usage:
+    player: "%prefix% &cИспользование: /speed <value> &1[player] [type]"
+    console: "%prefix% &cИспользование: /speed <value> <player> <type>"
+killmobs:
+  killed: "%prefix% &aУбиты все враждебные мобы"
+  usage: "%prefix% &cИспользование: /killmobs"
+spawnmob:
+  spawned: '%prefix% &a%num% мобов было создано!'
+  invalid: '%prefix% &cНедопустимая сущность'
+  usage: '%prefix% &cИспользование: /spawnmob <моб> [кол-во]'
+tpa:
+  request: |-
+    %prefix% &6%player% запросил телепортацию к вам.
+    &7Введите &e/tpa accept &7или &e/tpa deny.
+  request-sent: |-
+    %prefix% &6Вы отправили запрос на телепортацию игроку %player%.
+  accepted: "%prefix% &aЗапрос на телепортацию от %player% принят."
+  denied:
+    from: "%prefix% &cЗапрос на телепортацию от %player% отклонен."
+    to: "%prefix% &cЗапрос на телепортацию к %player% отклонен."
+  already-requested: "%prefix% &cВы уже запросили телепортацию."
+  usage: "%prefix% &cИспользование: /tpa <accept|deny|player_name>"
+  expired:
+    from: "%prefix% &cЗапрос на телепортацию от %player% истек."
+    to: "%prefix% &cЗапрос на телепортацию к %player% истек."
+  no-pending-request: "%prefix% &cУ вас нет ожидающих запросов на телепортацию."
+  player-not-found: "%prefix% &cУказанный игрок не в сети."
+  self-tpa-request: "%prefix% &cВы не можете отправить запрос самому себе!"
+item:
+  usage: "&eИспользование: /item <материал> [количество]"
+  invalid-material: "&cНеверный материал: &e%material%"
+  invalid-quantity: "&cКоличество должно быть положительным числом."
+  invalid-quantity-format: "&cНеверный формат числа для количества."
+  success: "&aВы получили &e%quantity% &aиз &e%material%."

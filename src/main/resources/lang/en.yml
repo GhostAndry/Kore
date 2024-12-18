@@ -1,0 +1,137 @@
+prefix: "&b&lKore&f:"
+no-permissions: "%prefix% &cYou don't have permissions."
+only-players: "%prefix% &cOnly players can run this command!"
+command-disabled: "%prefix% &cThis command is disabled"
+invalid-target: "%prefix% &cPlayer not found."
+lang-name: "English"
+messages:
+  successfully-set: "%prefix% &aSuccessfully changed language file to %lang%"
+  not-exist: "%prefix% &cImpossible to load the languages because the file doesn't exist!"
+reload:
+  success: "%prefix% &aSuccessfully reloaded!"
+  error: "%prefix% &cInternal error. Check the console for more info."
+gamemode:
+  changed: "%prefix% &aYour gamemode was changed to &e&o%gamemode%"
+  changed-other: "%prefix% &a%player%'s gamemode was changed to &e&o%gamemode%"
+  usage:
+    console: "%prefix% &cUsage: /gamemode <gamemode> <player>"
+    player: "%prefix% &cUsage: /gamemode <gamemode> &1[player]"
+fly:
+  enabled: "%prefix% &aFly enabled."
+  disabled: "%prefix% &cFly disabled."
+  enabled-other: "%prefix% &aFly enabled for %player%."
+  disabled-other: "%prefix% &cFly disabled for %player%."
+  usage:
+    console: "%prefix% &cUsage: /fly <player>"
+    player: "%prefix% &cUsage: /fly &1[player]"
+teleport:
+  teleported: "%prefix% &aTeleported to %loc%"
+  teleported-other: "%prefix% &aTeleported %player% to %loc%"
+  usage:
+    player: "%prefix% &cUsage: /teleport <player| x y z > &1[player| x y z ]"
+    console: "%prefix% &cUsage: /teleport <player| x y z > <player>"
+god:
+  enabled: "%prefix% &aGodmode enabled."
+  disabled: "%prefix% &cGodmode disabled."
+  enabled-other: "%prefix% &aGodmode enabled for %player%."
+  disabled-other: "%prefix% &cGodmode disabled for %player%."
+  usage:
+    player: "%prefix% &cUsage: /god &1[player]"
+    console: "%prefix% &cUsage: /god <player>"
+heal:
+  healed: "%prefix% &aHealed!"
+  healed-other: "%prefix% &a%player% has been healed!"
+  usage:
+    player: "%prefix% &cUsage: /heal &1[player]"
+    console: "%prefix% &cUsage: /heal <player>"
+vanish:
+  enabled: "%prefix% &aVanish turned on."
+  disabled: "%prefix% &aVanish turned off."
+  enabled-other: "%prefix% &aVanish turned on for &e&o%player%."
+  disabled-other: "%prefix% &aVanish turned off for &e&o%player%."
+  usage:
+    player: "%prefix% &cUsage: /vanish &1[player]"
+    console: "%prefix% &cUsage: /vanish <player>"
+spawn:
+  set: "%prefix% &aSpawn has been set to %x% %y% %z%."
+  teleported: "%prefix% &aTeleported to spawn"
+  teleported-other: "%prefix% &aTeleported %player% to spawn"
+  nonexistent: "%prefix% &cSpawn point wasn't set yet"
+  usage:
+    admin: "%prefix% &cUsage: /setspawn"
+    player: "%prefix% &cUsage: /spawn &1[player]"
+    console: "%prefix% &cUsage: /spawn <player>"
+orbitalcannon:
+  shoot: "%prefix% &aThe Orbital Cannon fired a shot at %coords%."
+  tell: "%prefix% &c&lYou've been hit by an orbital cannon shot!"
+  usage: "%prefix% &cUsage: /orbitalcannon <player | x y z>"
+smite:
+  smited-player: "%prefix% &aSmited %player%"
+  usage: "%prefix% &cUsage: /smite <player>"
+kill:
+  killed: "%prefix% &aKilled %player%."
+  usage:
+    player: "%prefix% &cUsage: /kill &1[player]"
+    console: "%prefix% &cUsage: /kill <player>"
+warp:
+  warped: "%prefix% &aYou have been warped to %warp%"
+  warped-other: "%prefix% &aYou have warped %player% to %warp%"
+  not-found: "%prefix% &cWarp not found."
+  admin:
+    added: "%prefix% &a%warp% was successfully added."
+    already-exist: "%prefix% &c%warp% already exist"
+    removed: "%prefix% &a%warp% was successfully removed."
+  usage:
+    player: "%prefix% &cUsage: /warp <name> &1[player]"
+    console: "%prefix% &cUsage: /warp <name> <player>"
+    admin:
+      add: "%prefix% &cUsage: /warp add <name>"
+      remove: "%prefix% &cUsage: /warp remove <name>"
+home:
+  teleported: "%prefix% &aYou have been teleported to your home."
+  teleported-other: "%prefix% &aYou have teleported %player% to his house."
+  not-set: "%prefix% &cYou haven't set your home yet."
+  set: "%prefix% &aYour home has been set to your position."
+  removed: "%prefix% &cYour home has been removed."
+  usage: "%prefix% &cUsage /home &1[set|remove]"
+speed:
+  set: "%prefix% Your speed was set to %speed%"
+  set-other: "%prefix% %player%'s speed was set to %speed%"
+  invalid-value: "%prefix% &cInvalid speed value"
+  invalid-type:
+    "%prefix% &cInvalid speed type. Speed types: Walk or Walking, Fly
+        or Flight"
+  usage:
+    player: "%prefix% &cUsage: /speed <value> &1[player] [type]"
+    console: "%prefix% &cUsage: /speed <value> <player> <type>"
+killmobs:
+  killed: "%prefix% &aKilled all hostile mobs"
+  usage: "%prefix% &cUsage: /killmobs"
+spawnmob:
+  spawned: "%prefix% &a%num% mobs have been spawned!"
+  invalid: "%prefix% &cInvalid entity"
+  usage: "%prefix% &cUsage: /spawnmob <mob> [num]"
+tpa:
+  request: |-
+    %prefix% &6%player% has requested to teleport to you.
+    &7Type &e/tpa accept &7or &e/tpa deny.
+  request-sent: |-
+    %prefix% &6You have sent a teleport request to %player%.
+  accepted: "%prefix% &aTeleport request from %player% accepted."
+  denied:
+    from: "%prefix% &cTeleport request from %player% denied."
+    to: "%prefix% &cTeleport request to %player% denied."
+  already-requested: "%prefix% &cYou have already requested a teleport."
+  usage: "%prefix% &cUsage: /tpa <accept|deny|player_name>"
+  expired:
+    from: "%prefix% &cTeleport request from %player% has expired."
+    to: "%prefix% &cTeleport request to %player% has expired."
+  no-pending-request: "%prefix% &cYou have no pending teleport requests."
+  player-not-found: "%prefix% &cThe specified player is not online."
+  self-tpa-request: "%prefix% &cYou cannot send a request to yourself!"
+item:
+  usage: "&eUsage: /item <material> [quantity]"
+  invalid-material: "&cInvalid material: &e%material%"
+  invalid-quantity: "&cQuantity must be a positive number."
+  invalid-quantity-format: "&cInvalid number format for quantity."
+  success: "&aYou have received &e%quantity% &aof &e%material%."
