@@ -81,7 +81,7 @@ Tested versions: 1.8, 1.9, 1.10, 1.11. 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18,
 [BStats](https://bstats.org/plugin/bukkit/Kore/18653)
 
 ​
-[FOR ANY ISUES GO TO DISCORD FORUM](https://discord.gg/sR5QTmHQ2U)
+[FOR ANY ISUES GO TO ISSUES SECTION](https://github.com/GhostAndry/Kore/issues)
 
 ## Configs and Languages
 
