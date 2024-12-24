@@ -36,6 +36,7 @@ Tested versions: 1.8, 1.9, 1.10, 1.11. 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18,
 - /killmobs
 - /spawnmob (mob) [number]
 - /tpa (accept|deny|player_name)
+- /item (material) [quantity]
 
 ## Permissions
 
@@ -59,6 +60,7 @@ Tested versions: 1.8, 1.9, 1.10, 1.11. 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18,
 - kore.trash
 - kore.smite
 - kore.speed
+- kore.item
 - kore.heal
 - kore.kill
 - kore.warp
@@ -79,13 +81,16 @@ Tested versions: 1.8, 1.9, 1.10, 1.11. 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18,
 [BStats](https://bstats.org/plugin/bukkit/Kore/18653)
 
 ​
-[FOR ANY ISUES GO TO DISCORD FORUM](https://discord.gg/sR5QTmHQ2U)
+[FOR ANY ISUES GO TO ISSUES SECTION](https://github.com/GhostAndry/Kore/issues)
 
 ## Configs and Languages
 
 ### Config.yml
 
 ```yaml
+
+messages: en
+
 gamemode:
   enabled: true
 fly:
@@ -134,17 +139,33 @@ spawnmob:
 tpa:
   enabled: true
   expiration: 60 #in seconds
+item:
+  enabled: true
 
 chat:
   enabled: true
-  format: "%sender%: %message%"
-  blacklist-words:
+  
+  # Placeholders:
+  # %message%` - the chat message
+  # %name% - the player's name
+  # %displayname% - the player's display name / nickname
+  # %world% - the world name of the player's current world
+  # %prefix% - the player's highest priority prefix
+  # %suffix% - the player's highest priority suffix
+  # %prefixes% - the player's prefixes sorted by the highest priority
+  # %suffixes% - the player's suffixes sorted by the highest priority
+  # %username-color% - the player's or the group's username color
+  # %message-color% - the player's or the group's message color
+  chat-format: "%prefix%%name%&r: %message%"
+  group-formats:
+  #  default: "[default] %name%&r: %message%"
+  #  admin: "[admin] %name%&r: %message%"
+  blacklist:
     - fuck
     - shit
-messages: en
+
 
 server:
-  # Make it null if or leave it empty you want to disable join messages
   join-msg: "&8[&a+&8] &f%player%"
   leave-msg: "&8[&c-&8] &f%player%"
 
@@ -161,4 +182,5 @@ world-manipulator:
     list:
       - world1
       - world2
+
 ```
