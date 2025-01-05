@@ -108,9 +108,9 @@
     </dependency>
   </dependencies>
   <properties>
-    <maven.compiler.target>17</maven.compiler.target>
-    <java.version>17</java.version>
-    <maven.compiler.source>17</maven.compiler.source>
+    <java.version>8</java.version>
+    <maven.compiler.source>8</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.target>8</maven.compiler.target>
   </properties>
 </project>

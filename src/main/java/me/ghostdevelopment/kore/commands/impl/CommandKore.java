@@ -62,7 +62,7 @@ public class CommandKore extends KoreCommand {
         sender.sendMessage(Color.Color(
                 "&aKore " + version + "\n" +
                         "&aAuthor: &7GhostAndry\n" +
-                        "&aGitHub: &b&nhttps://github.com/GhostAndry/Kore-Recoded\n"
+                        "&aGitHub: &b&nhttps://github.com/GhostAndry/Kore\n"
         ));
     }
 

@@ -4,7 +4,7 @@ main: me.ghostdevelopment.kore.Kore
 load: STARTUP
 api-version: 1.21
 author: GhostAndry
-website: https://github.com/GhostAndry/Kore-Recoded.git
+website: https://github.com/GhostAndry/Kore.git
 softdepend:
   - PlaceholderAPI
 
